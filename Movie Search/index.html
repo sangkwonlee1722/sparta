@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&display=swap');
+
+    * {
+      font-family: 'Gowun Dodum', sans-serif;
+    }
+
+    body {
+            background-color: black;
+        }
+
+    .head-title {
+      background-color: #ff999977;
+      height: 80px;
+    }
+
+    .head-title>h1 {
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin: auto;
+    }
+
+    .search-movie {
+      color: white;
+      margin-top: 20px;
+      text-align: center;
+      font-size: larger;
+    }
+
+    .movie-card {
+      width: 300px;
+      height: 900px;
+      background-color: rgba(180, 163, 163, 0.5);
+      color: rgba(255, 255, 255, 0.836);
+      margin-top: 20px;
+      align-items: center;
+      padding: 10px;
+      float: left;
+      margin: 20px 20px auto 20px;
+      border: 1px solid rgba(75, 46, 46, 0.233);  
+      border-radius: 10px;
+      box-shadow: 0px 2px 2px 2px rgb(136, 135, 135);
+    }
+
+    .movie-card>img {
+      width: 250px;
+      height: 500px;
+      text-align: center;
+      align-items: center;
+      margin: 10px auto 10px auto;
+      padding-left: 25px;
+    }
+
+    .movie-list {
+      columns: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head-title">
+    <h1>Movie Search</h1>
+  </div>
+  <form class="search-movie">
+    <label>Movie Search : </label>
+    <input type="text" id="searchInput" class="searchInput" placeholder="Please enter a movie title">
+    <button type="submit" id="searchBtn" class="searchBtn" onclick="searchBtnOnClick()">Search</button>
+  </form>
+  <div id="movie-list">
+  </div>
+  <script src="moviesearch.js"></script>
+</body>
+
+</html>
